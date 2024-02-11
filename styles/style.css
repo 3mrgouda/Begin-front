@@ -1,0 +1,209 @@
+/* fontLogo*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+/* fontNavigation */
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+/* font for head paragraph  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+/* font for paragrap header */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* font for paragraph section */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body {
+   font-size: 20px;
+   background-color: rgb(245, 245, 245);
+} 
+
+/* navbarStyling */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ padding: .3em 0;
+ z-index: 10;
+ background-image:linear-gradient(to left, rgba(255, 255, 0, 0.571), #F5E4D5 , #6FFF70);
+ 
+
+}
+nav>a{
+  font-family: 'Rubik Scribble';
+  font-size: 1.3em;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+nav>a>img{
+  width: 1.3em;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+.navigation{
+  font-family: 'Hachi Maru Pop', cursive;  font-size: .9em;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.navItem:hover{
+transform: scale(1.2);
+transition: .2s;
+}
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  position: absolute;
+  display: none;
+  background: #f5e4d5;
+}
+
+ul li:hover > ul{
+  visibility: visible;
+  display: block;
+  text-align: left;
+  padding-top: 1em;
+  padding-left: 0.3em;
+  box-shadow: 0px 3px 5px -1px #ccc;
+  
+}
+
+ul li ul li {
+  font-family: "Rubik Scribble";
+  font-weight: 900;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+
+ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #6fff70;
+  transition: all 0.3s ease;
+   background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 0, 0.571),
+      #f5e4d5,
+      #6fff70
+    );
+}
+a {
+  text-decoration: none;
+}
+
+#nest>i{
+font-size: .9em;
+}
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
+
+
+/* styling header section  */
+
+header{
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+header> .left , .right {
+  width: 50%;
+}
+/* styling left side of header */
+header>.left{
+  text-align: center;
+}
+header>.left img{
+  width: 70%;
+}
+
+/* stylin right side of header */
+
+
+header>.right>span{
+  font-family: 'Raleway', sans-serif;  font-weight: 400;
+  font-size: 1.4em;
+  text-transform: capitalize;
+}
+
+header>.right p{
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 200; 
+  width:80%;
+  font-size: .9em;
+  letter-spacing: 1px;
+ line-height: 1.3;
+}
+header>.right p span{
+  font-family: 'Raleway', sans-serif;  
+  font-weight: 400;
+}
+/* styling section area */
+section{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  }
+  section h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  text-align: center;
+  }
+  section p{
+margin: 2em 0;
+max-width: 70%;
+font-family: 'Lato', sans-serif;
+font-weight: 900;
+font-size: 1.1em;
+letter-spacing: 2px;
+  }
+section img {
+  width: 40%;
+  border-radius: 2em;
+  margin-bottom: 2em;
+}
+
+
+/* footerStyling */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ padding: .3em 0;
+ z-index: 10;
+ background-image:linear-gradient(to left, rgba(255, 255, 0, 0.571), #F5E4D5 , #6FFF70);
+ 
+
+}
+footer>a{
+  font-family: 'Rubik Scribble';
+  font-size: 1.3em;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+footer>a>img{
+  width: 1.3em;
+}
+.footerLinks{
+  font-family: 'Hachi Maru Pop', cursive;  
+  font-size: .9em;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.footerLinks>li:hover{
+  transform: scale(1.2);
+transition: .2s;
+}
